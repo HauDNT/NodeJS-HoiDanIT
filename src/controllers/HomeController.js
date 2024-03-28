@@ -1,3 +1,5 @@
+const connection = require('../config/database');
+
 const getHomePage = (req, res) => {
     //Process data <=> call Model
     res.render('sample.ejs');
