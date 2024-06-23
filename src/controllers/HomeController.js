@@ -15,6 +15,10 @@ const getCreateUserPage = (req, res) => {
     res.render("create_user.ejs");
 };
 
+const getUpdateUserPage = (req, res) => {
+    res.render("edit_user.ejs");
+};
+
 const postCreateUser = async (req, res) => {
     const { email, name, age } = req.body;
 
@@ -26,9 +30,12 @@ const postCreateUser = async (req, res) => {
     return res.send("Success");
 };
 
+
+
 module.exports = {
     getHomePage,
     showNewPosts,
     postCreateUser,
     getCreateUserPage,
+    getUpdateUserPage,
 };
