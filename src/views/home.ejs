@@ -43,6 +43,8 @@
 
     <div class="table-container">
         <table class="w3-table-all w3-hoverable">
+            <%= JSON.stringify(users) %>
+            
             <div class="title">List users</div>
             <thead>
                 <tr class="w3-light-grey">
@@ -50,6 +52,7 @@
                     <th>Email</th>
                     <th>Name</th>
                     <th>Age</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tr>
@@ -57,6 +60,10 @@
                 <td>?</td>
                 <td>?</td>
                 <td>?</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
             </tr>
         </table>
     </div>
